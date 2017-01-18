@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Page Object Model example">
+<!-- <parameter name="appURL" value="https://www.google.co.in/"/>
+<parameter name="browserType" value="firefox"/> -->
+	<listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="NewToursWebSite Testcases">
+    <classes>
+		    <!--   <class name="com.newtours.TestCases.LoginTestNew"/>   -->
+		     <class name="com.newtours.TestCases.CreateOrderTC02"/>
+
+    </classes>
+  </test>
+</suite>
